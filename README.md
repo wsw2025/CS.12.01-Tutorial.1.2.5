@@ -27,7 +27,7 @@ public class WordScrambler {
 }
 
 
-a) Write the WordScrambler method recombine. This method returns a String created from its two String parameters as follows
+a) Write the WordScrambler method recombine. This method returns a String created from its two String parameters as follows.
 Take the first half of word1
 Take the second half of word2
 Concatenate the two halves and return the new string
@@ -42,7 +42,7 @@ It takes the first pair of strings in words and combines them to produce a pair 
 
 {“apple”, “pear”, “this”, “cat”}
 
-then the cal mixedWords(words) should return the following array.
+then the call mixedWords(words) should return the following array.
 
 {“apar”, “peple”, “that”, “cis”}
 
