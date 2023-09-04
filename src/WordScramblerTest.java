@@ -49,6 +49,19 @@ class WordScramblerTest {
     }
 
     @org.junit.jupiter.api.Test
+    void newWordScramblerEvenWordArr() {
+
+        String[] words = {"the", "number", "of", "elements", "here", "is", "odd"};
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> new WordScrambler(words));
+
+        String expectedMessage = "Word Array must contain an even number of elements!";
+        String actualMessage = exception.getMessage();
+
+        assertEquals(expectedMessage, actualMessage);
+
+    }
+
+    @org.junit.jupiter.api.Test
     void newWordScrambler1() {
 
         String[] scrambledWords = ws1.getScrambledWords();
