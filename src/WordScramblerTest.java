@@ -65,6 +65,9 @@ class WordScramblerTest {
     void newWordScrambler1() {
 
         String[] scrambledWords = ws1.getScrambledWords();
+        for (int i = 0; i < scrambledWords.length; i++){
+            System.out.println(scrambledWords[i]);
+        }
         assertEquals("apar", scrambledWords[0]);
         assertEquals("peple", scrambledWords[1]);
         assertEquals("that", scrambledWords[2]);
